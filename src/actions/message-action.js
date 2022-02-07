@@ -1,4 +1,4 @@
-import { SUCCESS,PRIMARY,SECONDARY,ERROR,INFO,WARNING } from "./Types";
+import { SUCCESS,PRIMARY,SECONDARY,ERROR,INFO,WARNING,SHOW } from "./Types";
 
 
 // creating action
@@ -38,3 +38,11 @@ export const Warning = () => {
     type: WARNING,
   };
 };
+
+
+export const Show = (value)=>{
+  return {
+    type:SHOW,
+    payload:value
+  }
+}

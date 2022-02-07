@@ -3,6 +3,9 @@ import Sidra from "./Components/Sidra/Sidra";
 import Season from "./Components/Seasons/Season/Season";
 import Message from "./Components/Message/Message";
 import { MsgProvider } from "./Context/message-context";
+import Home from "./Components/Home/Home";
+
+
 function App() {
   return (
     <div className="App">
@@ -10,7 +13,8 @@ function App() {
       {/* <Season season="6" raiting="10" views="1500" /> */}
 
       <MsgProvider>
-        <Message />
+        <Home />
+        {/* <Message/> */}
       </MsgProvider>
     </div>
   );

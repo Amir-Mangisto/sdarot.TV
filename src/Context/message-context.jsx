@@ -7,7 +7,7 @@ export const msgContext=createContext();
 
 export const MsgProvider = ({children})=>{
     //using useReducer hook that take 2 args: reducer and state
-    const [mess,dispatch]=useReducer(messageReducer,"message")
+    const [mess,dispatch]=useReducer(messageReducer,{isOpen:false})
 
     return(
         <msgContext.Provider value={{mess,dispatch}}>
